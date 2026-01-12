@@ -71,7 +71,7 @@ const Hero = () => {
                     >
                         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-[#00FFD1]/30 bg-[#00FFD1]/5 backdrop-blur-sm mb-6">
                             <span className="w-2 h-2 rounded-full bg-[#00FFD1] animate-pulse"></span>
-                            <span className="text-[#00FFD1] text-xs font-mono uppercase tracking-widest">Digital Alchemist</span>
+                            <span className="text-[#00FFD1] text-xs font-mono uppercase tracking-widest">Digital Alchemist & AI Visual Artist</span>
                         </div>
 
                         <h2 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
@@ -135,7 +135,7 @@ const Hero = () => {
                                 className="absolute -left-12 bottom-12 bg-[#1A1A1A]/90 backdrop-blur-md p-4 border-l-4 border-[#00FFD1] shadow-2xl hidden md:block"
                             >
                                 <div className="text-white font-mono text-xs mb-1 text-[#00FFD1]">EXPERIENCE</div>
-                                <div className="text-3xl font-bold text-white">4+ Years</div>
+                                <div className="text-3xl font-bold text-white">7+ Years</div>
                                 <div className="text-gray-500 text-xs mt-1">VFX & Motion</div>
                             </motion.div>
                         </div>

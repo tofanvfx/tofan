@@ -132,6 +132,14 @@ const projects = [
         image: "https://img.youtube.com/vi/YhqMfAtPSVQ/maxresdefault.jpg",
         video: "https://www.youtube.com/embed/YhqMfAtPSVQ",
         description: "A funny cartoon story about a hungry owl at a bird restaurant run by a parrot and a crow."
+    },
+    {
+        id: 22,
+        title: "3D Product Visualization",
+        category: "Product Visualization",
+        image: "https://img.youtube.com/vi/dsAvytjH4oQ/maxresdefault.jpg",
+        video: "https://www.youtube.com/embed/dsAvytjH4oQ",
+        description: "A high-quality 3D product visualization showcasing detailed texturing and lighting."
     }
 ];
 
