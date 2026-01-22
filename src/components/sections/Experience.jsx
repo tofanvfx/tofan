@@ -5,22 +5,10 @@ import { Briefcase, Calendar } from 'lucide-react';
 
 const experiences = [
     {
-        role: "Senior Motion Graphics Designer",
-        company: "Creative Studio X",
-        period: "2024 - Present",
-        description: "Leading a team of designers to create high-end motion graphics for global brands."
-    },
-    {
-        role: "Freelance Video Editor",
-        company: "Self-Employed",
-        period: "2021 - 2024",
-        description: "Produced over 50+ video projects including commercials, music videos, and social media content."
-    },
-    {
-        role: "Junior Animator",
-        company: "Tech Media Corp",
-        period: "2019 - 2021",
-        description: "Assisted in creating 2D animations and explainer videos for tech products."
+        role: "Principal Motion Graphics Designer",
+        company: "Aveti Learning",
+        period: "2019 - Present",
+        description: "Working on educational videos for Class 1 to Class 10."
     }
 ];
 
