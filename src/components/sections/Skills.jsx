@@ -11,7 +11,12 @@ import {
     SiHoudini,
     SiFigma,
     SiAdobe,
-    SiAutodesk
+    SiAutodesk,
+    SiJavascript,
+    SiReact,
+    SiHtml5,
+    SiCss3,
+    SiPython
 } from "react-icons/si";
 import { Tv, Box, Clapperboard } from "lucide-react"; // Fallbacks suited for the theme
 
@@ -28,6 +33,14 @@ const skills = [
     { name: "Adobe Animate", level: "Intermediate", icon: SiAdobe, color: "#CC2929" },
     { name: "Mocha", level: "Intermediate", icon: Box, color: "#7B5542" }, // Using generic icon
     { name: "Maya", level: "Basic", icon: SiAutodesk, color: "#37A5CC" },
+];
+
+const webSkills = [
+    { name: "JavaScript", icon: SiJavascript, color: "#F7DF1E" },
+    { name: "React", icon: SiReact, color: "#61DAFB" },
+    { name: "HTML", icon: SiHtml5, color: "#E34F26" },
+    { name: "CSS", icon: SiCss3, color: "#1572B6" },
+    { name: "Python", icon: SiPython, color: "#3776AB" },
 ];
 
 const Skills = () => {
@@ -62,6 +75,21 @@ const Skills = () => {
                             <p className="text-xs text-gray-500 mt-2 text-right">{skill.level}</p>
                         </motion.div>
                     ))}
+                </div>
+
+                <div className="mt-14 relative overflow-hidden py-3">
+                    <motion.div
+                        className="flex w-max items-center gap-20 px-4"
+                        animate={{ x: ["0%", "-50%"] }}
+                        transition={{ duration: 16, repeat: Infinity, ease: "linear" }}
+                    >
+                        {[...webSkills, ...webSkills].map((skill, index) => (
+                            <div key={`${skill.name}-${index}`} className="flex items-center gap-4 whitespace-nowrap">
+                                <skill.icon className="text-3xl" style={{ color: skill.color }} />
+                                <span className="text-gray-200 text-base font-medium">{skill.name}</span>
+                            </div>
+                        ))}
+                    </motion.div>
                 </div>
             </div>
         </section>

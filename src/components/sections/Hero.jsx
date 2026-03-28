@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-scroll';
+import resumePdf from '../../assets/Tofan_Behera_CV.pdf';
 
 const Hero = () => {
     const containerRef = useRef(null);
@@ -94,7 +95,7 @@ const Hero = () => {
                                 </motion.button>
                             </Link>
 
-                            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+                            <a href={resumePdf} target="_blank" rel="noopener noreferrer">
                                 <motion.button
                                     whileHover={{ scale: 1.05 }}
                                     whileTap={{ scale: 0.95 }}
@@ -120,7 +121,7 @@ const Hero = () => {
 
                             <div className="w-full h-full bg-[#111] relative overflow-hidden group">
                                 <img
-                                    src="/tofan_profile.jpg"
+                                    src="/tofan-profile.jpeg"
                                     alt="Tofan Profile"
                                     className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 ease-in-out scale-100 group-hover:scale-110"
                                 />

@@ -18,7 +18,7 @@ const About = () => {
                         className="w-full"
                     >
                         <h3 className="text-2xl font-semibold text-white mb-6">
-                            Motion Graphics Designer & Video Editor
+                            Motion Graphics Designer & Front-End Developer
                         </h3>
                         <p className="text-gray-400 leading-relaxed mb-6 text-lg">
                             I’m a Motion Graphics Designer and Video Editor with strong experience in creating educational, cinematic, and promotional visuals. I love turning ideas into engaging motion stories using design, animation, and sound.
