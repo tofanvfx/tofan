@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-scroll';
-import resumePdf from '../../assets/Tofan_Behera_CV.pdf';
+import resumePdf from '../../assets/Tofan_Behera_CV.docx.pdf';
 
 const Hero = () => {
     const containerRef = useRef(null);
