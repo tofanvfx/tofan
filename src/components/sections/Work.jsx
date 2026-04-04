@@ -5,6 +5,7 @@ import SectionHeading from '../ui/SectionHeading';
 
 const categories = [
     "All",
+    "Video Work",
     "Motion Graphics",
     "VFX",
     "AI Visual Stories",
@@ -140,6 +141,22 @@ const projects = [
         image: "https://img.youtube.com/vi/dsAvytjH4oQ/maxresdefault.jpg",
         video: "https://www.youtube.com/embed/dsAvytjH4oQ",
         description: "A high-quality 3D product visualization showcasing detailed texturing and lighting."
+    },
+    {
+        id: 23,
+        title: "A Vision Beyond Sight",
+        category: "Video Work",
+        image: "https://img.youtube.com/vi/8WD3VhyZZzk/maxresdefault.jpg",
+        video: "https://www.youtube.com/embed/8WD3VhyZZzk",
+        description: "Kirttan Behera's mission to empower blind students."
+    },
+    {
+        id: 24,
+        title: "Redefining Tomorrow",
+        category: "Video Work",
+        image: "https://img.youtube.com/vi/babJEjbm9Ns/maxresdefault.jpg",
+        video: "https://www.youtube.com/embed/babJEjbm9Ns",
+        description: "Digital learning to achieve learning outcomes across Odisha."
     }
 ];
 
