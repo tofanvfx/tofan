@@ -4,11 +4,10 @@ import { Play, X } from 'lucide-react';
 import SectionHeading from '../ui/SectionHeading';
 
 const categories = [
-    "All",
-    "Video Work",
-    "Motion Graphics",
-    "VFX",
+    "Product Promo",
     "AI Visual Stories",
+    "Video Work",
+    "VFX",
     "Product Visualization"
 ];
 
@@ -37,38 +36,6 @@ const projects = [
         image: "https://img.youtube.com/vi/LhyT7MabkI0/maxresdefault.jpg",
         video: "https://www.youtube.com/embed/LhyT7MabkI0",
         description: "After Effects VFX breakdown featuring a complex compositing of a decapitated head effect."
-    },
-    {
-        id: 10,
-        title: "Ganesh Chaturthi Animation 2019",
-        category: "Motion Graphics",
-        image: "https://img.youtube.com/vi/s7BPZyR06FU/maxresdefault.jpg",
-        video: "https://www.youtube.com/embed/s7BPZyR06FU",
-        description: "Motion graphics animation celebrating Ganesh Chaturthi."
-    },
-    {
-        id: 11,
-        title: "Ganesh Chaturthi Animation 2020",
-        category: "Motion Graphics",
-        image: "https://img.youtube.com/vi/NYBZ1eJL3-4/maxresdefault.jpg",
-        video: "https://www.youtube.com/embed/NYBZ1eJL3-4",
-        description: "Updated motion graphics tribute for Ganesh Chaturthi 2020."
-    },
-    {
-        id: 12,
-        title: "Happy Diwali Animation 2019",
-        category: "Motion Graphics",
-        image: "https://img.youtube.com/vi/CkXrwDY-hcA/maxresdefault.jpg",
-        video: "https://www.youtube.com/embed/CkXrwDY-hcA",
-        description: "Festive motion graphics animation for Diwali celebrations."
-    },
-    {
-        id: 13,
-        title: "Dussehra Ravan Vadh Animation",
-        category: "Motion Graphics",
-        image: "https://img.youtube.com/vi/8AjNju9rNic/maxresdefault.jpg",
-        video: "https://www.youtube.com/embed/8AjNju9rNic",
-        description: "Animation depicting the Ravan Vadh for Dussehra."
     },
     {
         id: 14,
@@ -111,14 +78,6 @@ const projects = [
         description: "Official AI music video for a romantic Hindi song about first love."
     },
     {
-        id: 19,
-        title: "Happy New Year 2020 Animation",
-        category: "Motion Graphics",
-        image: "https://img.youtube.com/vi/lHfyN2bI7Fk/maxresdefault.jpg",
-        video: "https://www.youtube.com/embed/lHfyN2bI7Fk",
-        description: "Celebratory motion graphics animation for New Year 2020."
-    },
-    {
         id: 20,
         title: "The Last Acorn - Animated Short",
         category: "AI Visual Stories",
@@ -157,15 +116,30 @@ const projects = [
         image: "https://img.youtube.com/vi/babJEjbm9Ns/maxresdefault.jpg",
         video: "https://www.youtube.com/embed/babJEjbm9Ns",
         description: "Digital learning to achieve learning outcomes across Odisha."
+    },
+    {
+        id: 25,
+        title: "Product Promo Video",
+        category: "Product Promo",
+        image: "https://img.youtube.com/vi/o4ay9_rpxWg/maxresdefault.jpg",
+        video: "https://www.youtube.com/embed/o4ay9_rpxWg",
+        description: "A dynamic product promotional video showcasing creative visuals and branding."
+    },
+    {
+        id: 26,
+        title: "Brand Promo Video",
+        category: "Product Promo",
+        image: "https://img.youtube.com/vi/ENjqXbkHDf8/maxresdefault.jpg",
+        video: "https://www.youtube.com/embed/ENjqXbkHDf8",
+        description: "An engaging brand promotional video with compelling storytelling and visuals."
     }
 ];
 
 const Work = () => {
     const [selectedProject, setSelectedProject] = useState(null);
-    const [activeCategory, setActiveCategory] = useState("All");
+    const [activeCategory, setActiveCategory] = useState("Product Promo");
 
     const filteredProjects = useMemo(() => {
-        if (activeCategory === "All") return projects;
         return projects.filter(project => project.category === activeCategory);
     }, [activeCategory]);
 
